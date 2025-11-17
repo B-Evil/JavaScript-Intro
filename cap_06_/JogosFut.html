@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetFut</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+            width: 1920px;
+        }
+
+        img{
+            border-radius: 100%;
+            box-shadow: 20px 20px 100px rgb(238, 236, 236);
+        }
+
+        main{
+            width: 1300px;
+            margin: 100px auto;
+            display: flex;
+            gap: 100px;
+        }
+
+        h1{
+            font-size: 45px;
+            border-bottom: 2px solid rgb(57, 31, 204);
+            color: rgb(31, 31, 31);
+        }
+
+        label{
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /*button*/
+        input{
+            padding: 4px 10px;
+            margin: 5px;
+        }
+
+        pre{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!--img side left-->
+        <aside>
+            <img src="./arcade.jpg" alt="Consultório" width="500px">
+        </aside>
+        <div class="container">
+            <h1>BetFut</h1>
+            <form method="#" action="#">
+                <label>Clube: </label>
+                <input type="text" required autofocus id="inClube">
+                <input type="submit" value="Adicionar" id="btAdicionar">
+                <div>
+    
+                </div> 
+                <input type="button" value="Listar Clubes" id="btListar"> 
+                <input type="button" value="Montar Tabela de Jogos" id="btTabela">
+            </form>
+            <pre></pre>
+        </div>
+    </main>
+    <script src="./jogosFut.js"></script>
+</body>
+</html>
