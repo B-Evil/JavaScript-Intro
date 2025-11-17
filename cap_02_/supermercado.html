@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <style>
+        *{
+            font-family: Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            width: 1000px;
+            margin: 150px auto;
+            gap: 50px;
+        }
+
+        h1{
+            font-size: 50px;
+            border-bottom: 2px dashed #333;
+            font-family: Verdana, sans-serif;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        input{
+            margin: 10px 0px;
+            padding: 5px;
+            color: #111111;
+        }
+
+        .color-button{
+            color: #fff;
+            font-weight: bold;
+            font-family: Helvetica, serif;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(83, 228, 83);
+            border: 1px solid rgb(83, 228, 83)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Supermercado --</h1>
+        <form action="#" class="column">
+            <label>Produto:</label>
+            <input type="text" id="inProduto" required> 
+            <label>Preço R$:</label>
+            <input type="text" id="inPreco">
+            <input  class="color-button" type="submit" value="Buy" required>
+        </form>
+    </div>
+    <div class="flex">
+        <h3></h3>
+        <h4></h4>
+    </div>
+    <script src="./supermercado.js"></script>
+</body>
+</html>

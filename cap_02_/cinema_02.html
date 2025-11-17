@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <style>
+        *{
+            font-family: Verdana, sans-serif;
+            color: aliceblue;
+        }
+
+        body{
+            background-color: #111111;
+            display: flex;
+            width: 1000px;
+            margin: 150px auto;
+            gap: 50px;
+        }
+
+        h1{
+            font-size: 50px;
+            border-bottom: 2px solid #333;
+            font-family: Verdana, sans-serif;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        input{
+            margin: 10px 0px;
+            padding: 5px;
+            color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartaz">
+        <img src="./cartaz.jpg" alt="cartaz" width="300px">
+    </div>
+    <div>
+        <h1>Cine Pipoca</h1>
+        <form action="#" class="column">
+            <label>Nome do filme</label>
+            <input type="text" id="inName"> 
+            <label>Tempo do filme em minutos</label>
+            <input type="text" id="inTime">
+            <input type="submit" value="converter">
+        </form>
+    </div>
+    <div class="flex">
+        <p>Nome do Filme:</p>
+        <h3></h3>
+        <p>Tempo de Filme:</p>
+        <h4></h4> 
+    </div>
+    <script src="./cinema_02.js"></script>
+</body>
+</html>
