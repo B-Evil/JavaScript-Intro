@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do{}while()</title>
+</head>
+<body>
+    <script>
+        let num; 
+        do{
+            num = Number(prompt("Digite um número inteiro para ver seus pares."));
+            if(num == 0 || isNaN(num) || !Number.isInteger(num)){
+                alert("Seu número é inválido ou não é um número inteiro.");
+            }
+        }while(num == 0 || isNaN(num) || !Number.isInteger(num));
+        let message = `Os pares entre 1 e ${num}: `; 
+        for(let i = 2; i <= num; i += 2){
+            message += i+",";
+        }
+        alert(message);
+    </script>
+</body>
+</html>
