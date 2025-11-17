@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 01 - atividade f </title>
+    <style>
+        body{
+            background-color: rgb(44, 44, 44);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Atividade -> Elabore um programa que leia o valor total de uma conta 
+        //e leia o total de pessoas que vão pagar e divida a conta... 
+
+        const valor = Number(prompt("Valor da conta: ")); 
+        const pagantes = Number(prompt('Quantas pessoas vão pagar ? '));
+
+        const parte =  valor / pagantes; 
+
+        alert(`Valor da conta : ${valor}\nPessoas pagantes: ${pagantes}\nValor por Cliente: ${parte.toFixed(2)}`);
+    </script>
+</body>
+</html>

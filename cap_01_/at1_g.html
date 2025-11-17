@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 01 - atividade g </title>
+    <style>
+        body{
+            background-color: rgb(44, 44, 44);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Atividade -> Elabore um programa para uma loja que leia as informações de pagamento e mostre
+        // as 3 opções de pagamento, avista com 10% de desconto e divida em 3x. 
+
+        //const -> proutoValor contém o preço do produto.
+        const produtoValor = Number(prompt("Valor do produto: "));
+        const desconto = (produtoValor * 10) /100; 
+        const avista = produtoValor - desconto; 
+        const parcela = produtoValor / 3; 
+
+        alert(`Valor do produto R$: ${produtoValor.toFixed(2)}\nAvista R$: ${avista.toFixed(2)}\nou 3x R$: ${parcela.toFixed(2)}`)
+     </script>
+</body>
+</html>
