@@ -1,5 +1,5 @@
 /*
- * comentários...
+ * comentários.....
  *          dispatchEvent
  */
 const frm = document.querySelector('form');
