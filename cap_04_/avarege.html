@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema da Escola</title>
+    <style>
+        *{
+            font-family: Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            width: 1000px;
+            margin: 150px auto;
+            gap: 50px;
+        }
+
+        h1{
+            font-size: 50px;
+            border-bottom: 2px dashed #333;
+            font-family: Verdana, sans-serif;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        input{
+            margin: 10px 0px;
+            padding: 5px;
+            color: #111111;
+        }
+
+        .color-button{
+            color: #fff;
+            font-family: Helvetica, serif;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(83, 228, 83);
+            border: 1px solid rgb(83, 228, 83)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Escola 203</h1>
+        <form action="#" class="column">
+            <label>Nome:</label>
+            <input type="text" id="inName" required >
+            <label>Nota 1:</label>
+            <input type="text" id="inNota1" required min="0" max="10"> 
+            <label>Nota 2:</label>
+            <input type="text" id="inNota2" required min="0" max="10">
+            <input  class="color-button" type="submit" value="Resultado" required>
+        </form>
+    </div>
+    <div class="flex">
+        <h3></h3>
+        <h4></h4>
+    </div>
+    <script src="./avarege.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro</title>
+    <style>
+        *{
+            font-family: Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: row;
+            width: 900px;
+            margin: 150px auto;
+            gap: 70px;
+        }
+
+        h1{
+            font-size: 50px;
+            border-bottom: 2px dashed #333;
+            font-family: Verdana, sans-serif;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        input{
+            margin: 10px 0px;
+            padding: 5px;
+            color: #111111;
+        }
+
+        .color-button{
+            color: #fff;
+            font-family: Helvetica, serif;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(83, 228, 83);
+            border: 1px solid rgb(83, 228, 83)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Estacionamento</h1>
+        <form action="#" class="column">
+            <label>Valor R$:</label>
+            <input type="text" id="inValor" required>
+            <input type="submit" value="Depositar" class="color-button">
+        </form>
+    </div>
+    <div class="flex">
+        <h3></h3>
+        <h2></h2>
+    </div>
+    <script src="./estacionamento.js"></script>
+</body>
+</html>
