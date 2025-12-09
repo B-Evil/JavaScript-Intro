@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercício</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: Helvetica, sans-serif;
+                background-color: rgb(255, 255, 255);
+                width: 1920px;
+            }
+            main{
+                width: 1500px;
+                margin:90px auto;
+                gap: 200px;
+                display: flex;
+                flex-direction: rows;
+            }
+
+            h1{
+                font-size: 40px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border-bottom: 5px solid rgb(63, 105, 220);
+            }
+
+
+            p{
+                
+                font-size: 20px;
+            }
+            select{
+                width: 200px;
+                text-align: center;
+                padding: 7px;
+                border-radius: 5px;
+                color: #fff;font-weight: bold;
+                background-color: rgb(47, 118, 184);
+                border: none;
+                margin-left: 60px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            option{
+                background-color: #fff;
+                color: black;
+                font-size: 15px;
+            }
+
+            .oculta{
+                display: none;
+            } 
+            
+            .exibir{
+                display: inline;
+            }
+
+            .button{
+                background-color: rgb(19, 216, 101);
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .detalhes:nth-child(2){
+                margin-bottom: 20px;
+                width: 300px;
+                padding: 7px 20px ;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <img src="ex8_4.jpg">
+            </aside>
+            <div class="container">
+                <h1>Pizzaria - Pedidos</h1>
+                <form action="#">
+                    <diV class="itens">
+                        <p>Itens do pedido</p>
+                        <input type="radio" id="rbPizza" name="produto" checked>
+                        <label>Pizza</label>
+                        <input type="radio" id="rbBebida" name="produto">
+                        <label for="">Bebida</label>
+
+                        <select id="inPizza">
+                            <option value="media">Pizza Média</option>
+                            <option value="grande">Pizza Grande</option>
+                            <option value="familia">Pizza Família</option>
+                        </select>
+
+                        <select id="inBebida" class="oculta">
+                            <option value="refri">Refrigerante Litro</option>
+                            <option value="suco">Jarra de Suco</option>
+                            <option value="agua">Água Mineral</option>
+                        </select>
+                    </diV>
+                    <div class="detalhes">
+                        <p>Detalhes do pedido</p>
+                        <input type="text" id="inDetalhes" class="detalhes">
+                        <input type="submit" value="ADICIONAR" class="button">
+                    </div>
+                </form>
+                <pre></pre>
+            </div>
+        </main>
+        <script src="pizzaria.js"></script>
+    </body>
+</html>
