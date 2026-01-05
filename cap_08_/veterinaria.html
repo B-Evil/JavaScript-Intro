@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercício</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: Helvetica, sans-serif;
+                background-color: rgb(255, 255, 255);
+                width: 1920px;
+            }
+            main{
+                width: 1500px;
+                margin:90px auto;
+                gap: 200px;
+                display: flex;
+                flex-direction: rows;
+            }
+
+            h1{
+                font-size: 40px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border-bottom: 5px solid rgb(102, 5, 159);
+            }
+
+
+            p{
+                
+                font-size: 20px;
+            }
+            select{
+                width: 200px;
+                text-align: center;
+                padding: 7px;
+                border-radius: 5px;
+                color: #fff;font-weight: bold;
+                background-color: rgb(47, 118, 184);
+                border: none;
+                margin-left: 60px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            option{
+                background-color: #fff;
+                color: black;
+                font-size: 15px;
+            }
+
+            .ocultar{
+                display: none;
+            } 
+            
+            .exibir{
+                display: inline;
+            }
+
+            .button{
+                background-color: rgb(19, 216, 101);
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+
+            .detalhes:nth-child(2){
+                margin-bottom: 20px;
+                width: 300px;
+                padding: 7px 20px ;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <img src="exerc.jpg">
+            </aside>
+            <div class="container">
+                <h1>Veterinária</h1>
+                <form action="#">
+                    <div class="detalhes">
+                        <p>Valor da vacina</p>
+                        <input type="text" id="inValor" class="detalhes">
+                    </div>
+                    <div class="itens">
+                        <p>Possui Convênio:</p>
+                        <input type="radio" id="rbSim" name="produto">
+                        <label>Sim</label>
+                        <input type="radio" id="rbNao" name="produto" checked>
+                        <label for="">Não</label>
+                        
+                        <select id="inConvenio" class="ocultar">
+                            <option value="0.20">Amigo dos Animais</option>
+                            <option value="0.50">Saúde Animal</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="COMPRAR" class="button">
+                </form>
+                <pre></pre>
+            </div>
+        </main>
+        <script src="veterinaria.js"></script>
+    </body>
+</html> 
