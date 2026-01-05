@@ -1,33 +1,32 @@
 const frm = document.querySelector('form');
-const resp = document.querySelector('pre');
+const pedidos = document.querySelector('pre');
 const itens = [];
 
-frm.rbPizza.addEventListener('click', ()=>{
-    frm.inBebida.className = "oculta";
+frm.rbPizza.addEventListener('click', () =>{
     frm.inPizza.className = "exibir";
+    frm.inBebida.className = "ocultar";
 });
 
-frm.rbBebida.addEventListener('click', () => {
-    frm.inBebida.className = "exibir";
-    frm.inPizza.className = "oculta";
+frm.rbBebida.addEventListener('click', () =>{
+    frm.inBebida.className = "exibir"; 
+    frm.inPizza.className = "ocultar";
 });
 
 frm.inDetalhes.addEventListener('focus', () =>{
     if(frm.rbPizza.checked){
         const pizza = frm.inPizza.value;
-        const num = pizza == "media" ? 2 : pizza == "grande" ? 3: 4;
-        frm.inDetalhes.placeholder = `Até ${num} sabores`;
+        const num = pizza == "media" ? 2 : pizza =="grande" ? 3 : 4;
+        frm.inDetalhes.placeholder = `até ${num} sabores`;
     }
 });
 
 frm.inDetalhes.addEventListener('blur', () =>{
     frm.inDetalhes.placeholder = "";
-});
+})
 
-frm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    let produto;
+frm.addEventListener('submit', (e) =>{
+    e.preventDefault(); 
+    let produto; 
     if(frm.rbPizza.checked){
         const num = frm.inPizza.selectedIndex;
         produto = frm.inPizza.options[num].text;
@@ -37,10 +36,8 @@ frm.addEventListener('submit', (e) => {
     }
 
     const detalhes = frm.inDetalhes.value;
-    itens.push(`${produto} (${detalhes})`);
-
-    resp.innerText = itens.join("\n");
-
+    itens.push(`${produto} - Sabor: ${detalhes}`);
+    pedidos.innerText = itens.join("\n");
     frm.reset();
     frm.rbPizza.dispatchEvent(new Event('click'))
 });
