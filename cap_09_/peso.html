@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Exercícios</title>
+
+</head>
+<body>
+    <div class="conatiner-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/ex9_3.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm-4">
+                <h1>Qual é o peso da Malancia ? </h1>
+                <form>
+                    <div>
+                        <label for="inNome">Nome do Apostador</label>
+                        <input type="text" id="inNome" class="form-control" required autofocus>
+                    </div>
+
+                    <div>
+                        <label for="inPeso">Peso (Em gramas):</label>
+                        <input type="text" id="inPeso" class="form-control" required>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Apostar" class="btn btn-primary">
+                        <input type="button" value="Vencedor" id="btVencedor" class="btn btn-warning">
+                        <input type="button" value="Limpar Apostas" id="btClear" class="btn btn-danger">
+                    </div>
+                </form>
+                <pre></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="peso.js"></script>
+</body>
+</html>
