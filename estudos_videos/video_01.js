@@ -1,3 +1,4 @@
+
 // Banco de Dados - produtos -> 
 const produtos = [
     {id: 1, nome: "Smartphone galaxy S21", preco: 3999.99, desconto: true, quantidade: 10},
