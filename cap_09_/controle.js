@@ -30,7 +30,7 @@ const addServico = () => {
 const verificarServico = () => { 
     if(!localStorage.getItem('produtos')){
         count.innerText = `Serviços: 0`;
-        return true;
+        return;
     }
     const servicos = localStorage.getItem('produtos').split(';');
     const counter = servicos.length;
@@ -59,7 +59,7 @@ window.addEventListener('load', removeServico);
 
 frm.btExecutar.addEventListener('click', () => {
     if(!localStorage.getItem('produtos')){
-        alert("Não a serviços...");
+        alert("Não há serviços...");
         resp.innerText = ``;
         return;
     }
