@@ -1,0 +1,39 @@
+
+.container-fluid{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+form div{
+    width: 500px;
+}
+
+label{
+    margin: 5px 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form div{
+    margin: 20px 0px;
+}
+
+form input {
+    margin: 10px 0px 20px  0px;
+}
+
+h5{
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    color: rgb(15, 250, 70);
+    border-radius: 7px;
+    background-color: rgb(43, 42, 42);
+    box-shadow: 10px 30px 100px rgb(86, 85, 85);
+    transition: 0.6s;
+}
+
+.tarefa-selecionada{
+    transform: scale(1.1);
+    transition: 1s;
+}
