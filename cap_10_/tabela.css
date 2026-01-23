@@ -1,0 +1,25 @@
+.row-2{
+    display: flex;
+    width: 1400px;
+    margin: 50px auto;
+    gap: 200px;
+}
+
+form, .table{ 
+    width: 700px;
+}
+
+input{ 
+    margin: 20px 0px;
+}
+
+.col-sm-8{
+    width: 800px;
+}
+
+.excluir:hover{
+    color: red;
+}
+.excluir{
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="tabela.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <div class="conatiner-fluid">
+        <div class="row-2">
+            <div class="col-sm-4    ">
+                <img src="imgs/ex10_3.jpg">
+            </div>
+            <div class="col-sm-8">
+                <h1>Meus Filmes favoritos</h1>
+                <form>
+                    <div>
+                        <label for="inTitulo">Titulo do filme:</label>
+                        <input type="text" class="form-control" id="inTitulo" required autofocus>
+                    </div>
+                    <div>
+                        <label for="inGenero">Genero do filme:</label>
+                        <input type="text" class="form-control" id="inGenero" required>
+                    </div>
+                    <input type="submit"  class="btn btn-primary float-right mb-3" value="Adicionar">
+                </form>
+
+                <table class="table table-striped">
+                    <tr>
+                        <th>Título do Filme</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="tabela.js"></script>
+</body>
+</html>
