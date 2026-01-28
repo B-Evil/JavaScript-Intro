@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <title>Copa do Brasil</title>
+        <style>
+            .row-1{
+                width: 1700px;
+                margin: 100px auto;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+            }
+
+            h1{
+                border-bottom: 7px solid rgb(25, 21, 124);
+            }
+
+            form{
+                width: 600px;
+                margin: 0 autos;
+            }
+
+            .btn{
+                margin: 20px 0px ;
+            }
+
+            h3{
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            pre{
+                font-size: 20px;
+                font-weight: bolds;
+                margin: 20px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conatiner-fluid">
+            <div class="row-1">
+                <div class="col-sm-5">
+                    <img src="imgs/exerc.jpg" alt="imagens ilustrativas">
+                </div>
+                <div class="col-sm-7" id="divTabela">
+                    <form>
+                        <h1>Copa do Brasil - Classificados</h1>
+                        <div>
+                            <label for="inClube">Clube:</label>
+                            <input type="text" class="form-control" id="inClube" required focus>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Adicionar">
+                        <input type="button" id="btCreat" class="btn btn-primary" value="Criar Tabela">
+                        <input type="button" id="btReset" class="btn btn-dark" value="Novos Clubes">
+                    </form>
+                    <pre></pre>
+
+                    <h2>Tabela de jogos</h2>
+                    <table class="table table-striped">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="copa.js"></script>
+    </body>
+</html>
