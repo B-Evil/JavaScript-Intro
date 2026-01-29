@@ -57,11 +57,13 @@ tbFilmes.addEventListener('click', (e) =>{
             e.target.parentElement.parentElement.remove();
             localStorage.removeItem('tituloFilme');
             localStorage.removeItem('generoFilme');
-
-            for(let i = 0; i < tbFilmes.rows.length; i++){
-                const auxTitulo = tbFilmes.rows[i].cells[0].innerText;
-                const auxGenero = tbFilmes.rows[i].cells[1].innerText;
-                gravarFilme(auxTitulo, auxGenero);
+            const linhas = document.querySelectorAll('tr');
+            if(linhas.length > 0){
+                for(let i = 1; i < tbFilmes.rows.length; i++){
+                    const auxTitulo = tbFilmes.rows[i].cells[0].innerText;
+                    const auxGenero = tbFilmes.rows[i].cells[1].innerText;
+                    gravarFilme(auxTitulo, auxGenero);
+                }
             }
         }
     }
